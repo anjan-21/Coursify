@@ -1,0 +1,19 @@
+.service {
+  margin: 15rem 0;
+  > div {
+    background-color: $pure;
+    width: 300px;
+    border-radius: 0 40px 40px 0;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.2);
+
+    .details {
+      text-align: center;
+      padding-right: 1.5rem;
+      color: $Primary-gray;
+    }
+  }
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}

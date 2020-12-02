@@ -33,6 +33,10 @@
           align-items: center;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .active {
   color: #da1233 !important;
   border-bottom: 3px solid #da1233;
@@ -133,5 +137,106 @@ body {
   border-radius: 100%;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.42);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.42);
+}
+
+.service {
+  margin: 15rem 0;
+}
+
+.service > div {
+  background-color: white;
+  width: 300px;
+  border-radius: 0 40px 40px 0;
+  -webkit-box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.service > div .details {
+  text-align: center;
+  padding-right: 1.5rem;
+  color: #4e4c4c;
+}
+
+.service img {
+  width: 150px;
+  height: 150px;
+}
+
+.solve_doubts {
+  margin: 10rem 0;
+}
+
+.solve_doubts .doubts_details > h1 {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.solve_doubts .doubts_details > h1 span {
+  color: #033b86;
+}
+
+.solve_doubts .doubts_details > div {
+  margin: 2rem 0;
+}
+
+.solve_doubts .doubts_details img {
+  width: 80px !important;
+}
+
+.solve_doubts .doubts_details .details {
+  padding: 0 2rem;
+}
+
+.solve_doubts .doubts_details .details h1 {
+  padding-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.solve_doubts .doubts_details .details p {
+  font-size: 1.5rem;
+}
+
+.solve_doubts .doubts_poster img {
+  width: 500px;
+  margin-top: 5rem;
+}
+
+.how_work > h1 {
+  font-size: 2.5rem;
+  color: #033b86;
+  margin: 2rem 0;
+}
+
+.how_work .work_details img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0px 5px #525050;
+          box-shadow: 0 0px 5px #525050;
+}
+
+.how_work .work_details p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: 0 1.5rem;
+}
+
+.how_work .work_details .question {
+  margin-top: 3rem;
+}
+
+.how_work button {
+  margin: 3rem auto;
+  padding: 0.6rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: #da1233;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.how_work button i {
+  padding-right: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */

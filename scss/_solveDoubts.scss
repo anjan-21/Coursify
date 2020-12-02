@@ -1,0 +1,35 @@
+.solve_doubts {
+  margin: 10rem 0;
+  .doubts_details {
+    > h1 {
+      font-size: 4rem;
+      margin-bottom: 4rem;
+      span {
+        color: $primary-blue;
+      }
+    }
+    > div {
+      margin: 2rem 0;
+    }
+    img {
+      width: 80px !important;
+    }
+    .details {
+      padding: 0 2rem;
+      h1 {
+        padding-bottom: 0.5rem;
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .doubts_poster {
+    img {
+      width: 500px;
+      margin-top: 5rem;
+    }
+  }
+}

@@ -26,7 +26,9 @@ $dark: black;
 .aling-center {
   align-items: center;
 }
-
+.text-center {
+  text-align: center;
+}
 .active {
   color: $primary-pink !important;
   border-bottom: 3px solid $primary-pink;
@@ -44,3 +46,6 @@ body {
 
 @import "./navbar";
 @import "./hero";
+@import "./services";
+@import "./solveDoubts";
+@import "./workDetails";

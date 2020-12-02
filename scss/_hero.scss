@@ -1,0 +1,66 @@
+.hero {
+  margin: 6rem 0;
+
+  .hero_detail {
+    h1 {
+      font-size: 5rem;
+      span {
+        color: $primary-blue;
+      }
+    }
+    button {
+      text-align: center;
+      margin: 3rem auto;
+      padding: 0.6rem 1rem;
+      font-size: 1.5rem;
+      border-radius: 10px;
+      background-color: $primary-pink;
+      border: none;
+      color: $pure;
+      outline: none;
+      i {
+        padding-right: 0.5rem;
+      }
+    }
+  }
+
+  .hero_img {
+    width: 650px;
+    height: 400px;
+    padding: 1rem;
+    position: relative;
+    border: 20px solid transparent;
+    background-color: $pure;
+    box-sizing: border-box;
+    background-clip: padding-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(
+        270deg,
+        rgba(218, 18, 51, 0.8) 0%,
+        rgba(3, 59, 134, 0.8) 100%
+      );
+      z-index: -1;
+      margin: -20px;
+      border-radius: 40px;
+    }
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $primary-blue;
+      padding: 1rem 1rem 1rem 1.3rem;
+      background-color: $pure;
+      border-radius: 100%;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.42);
+    }
+  }
+}

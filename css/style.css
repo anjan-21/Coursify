@@ -1,1 +1,137 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+.container {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.aling-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.active {
+  color: #da1233 !important;
+  border-bottom: 3px solid #da1233;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #4e4c4c !important;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navbar {
+  margin: 1rem 0;
+}
+
+.navbar .branding img {
+  width: 200px;
+}
+
+.navbar .nav_links a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4e4c4c;
+  text-decoration: none;
+  padding: 1rem;
+  margin: 0 1rem;
+}
+
+.hero {
+  margin: 6rem 0;
+}
+
+.hero .hero_detail h1 {
+  font-size: 5rem;
+}
+
+.hero .hero_detail h1 span {
+  color: #033b86;
+}
+
+.hero .hero_detail button {
+  text-align: center;
+  margin: 3rem auto;
+  padding: 0.6rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: #da1233;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.hero .hero_detail button i {
+  padding-right: 0.5rem;
+}
+
+.hero .hero_img {
+  width: 650px;
+  height: 400px;
+  padding: 1rem;
+  position: relative;
+  border: 20px solid transparent;
+  background-color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-clip: padding-box;
+}
+
+.hero .hero_img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(218, 18, 51, 0.8)), to(rgba(3, 59, 134, 0.8)));
+  background: linear-gradient(270deg, rgba(218, 18, 51, 0.8) 0%, rgba(3, 59, 134, 0.8) 100%);
+  z-index: -1;
+  margin: -20px;
+  border-radius: 40px;
+}
+
+.hero .hero_img i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #033b86;
+  padding: 1rem 1rem 1rem 1.3rem;
+  background-color: white;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.42);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.42);
+}
+/*# sourceMappingURL=style.css.map */

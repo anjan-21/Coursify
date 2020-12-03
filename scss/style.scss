@@ -42,6 +42,7 @@ $dark: black;
 body {
   color: $Primary-gray !important;
   font-family: "Ubuntu", sans-serif;
+  height: 5000px;
 }
 
 @import "./navbar";
@@ -49,3 +50,5 @@ body {
 @import "./services";
 @import "./solveDoubts";
 @import "./workDetails";
+@import "./liveClass";
+@import "./jee-neetClass";

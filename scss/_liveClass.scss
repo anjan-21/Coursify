@@ -1,0 +1,98 @@
+.live_classes_title {
+  h1 {
+    font-size: 3rem;
+    margin: 10rem 0 5rem 0;
+    span {
+      color: $primary_blue;
+    }
+  }
+}
+
+.live_classes {
+  .demo_class {
+    background-color: $pure;
+    width: 700px;
+    height: 400px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.49);
+    border-radius: 10px;
+
+    .question {
+      p {
+        padding-top: 0.6rem;
+      }
+      img {
+        width: 100px;
+      }
+      .mcq_option {
+        div {
+          background-color: $pure;
+          width: 250px;
+          height: 30px;
+          margin: 1.5rem 0;
+          padding: 0.4rem;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.49);
+        }
+      }
+    }
+    .chat_people {
+      background-color: $primary_blue;
+      width: 180px;
+      height: 320px;
+      div {
+        background-color: $pure;
+        width: 150px;
+        height: 60px;
+        margin: 1.5rem auto;
+      }
+    }
+    i {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: $pure;
+      border-radius: 50px;
+      padding: 1.5rem 1.5rem 1.5rem 2rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .class_details {
+    > div {
+      margin: 2rem 0;
+      img {
+        width: 100px;
+      }
+      div {
+        margin: 0 2rem;
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.2rem;
+          padding: 1rem 0;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+.first_class_title {
+  text-align: center;
+  margin: 5rem 0;
+  h1 {
+    font-size: 2.5rem;
+    color: $primary_blue;
+    text-transform: uppercase;
+  }
+  button {
+    margin: 2rem 0;
+    padding: 0.6rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: $primary-pink;
+    border: none;
+    color: $pure;
+    outline: none;
+  }
+}

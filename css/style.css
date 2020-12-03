@@ -52,7 +52,7 @@
 body {
   color: #4e4c4c !important;
   font-family: "Ubuntu", sans-serif;
-  height: 5000px;
+  height: 10000px;
 }
 
 .navbar {
@@ -436,5 +436,78 @@ body {
   border: none;
   color: white;
   outline: none;
+}
+
+.subject_title,
+.books_title,
+.board_title {
+  margin: 10rem 0 5rem 0;
+  text-align: center;
+}
+
+.subject_title h1,
+.books_title h1,
+.board_title h1 {
+  font-size: 3rem;
+  color: #033b86;
+}
+
+.subject_title p,
+.books_title p,
+.board_title p {
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+
+.books_title {
+  margin-top: 15rem;
+}
+
+.books_title h1 {
+  color: #4e4c4c;
+}
+
+.books_title h1 span {
+  color: #033b86;
+}
+
+.subjects,
+.books,
+.board {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 250px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+  grid-column-gap: 1.2rem;
+  grid-row-gap: 2.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.subjects div,
+.books div,
+.board div {
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.49);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.49);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.subjects div img,
+.books div img,
+.board div img {
+  width: 100px;
+  height: 100px;
+}
+
+.subjects div h2,
+.books div h2,
+.board div h2 {
+  padding-top: 1rem;
+  color: #033b86;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */

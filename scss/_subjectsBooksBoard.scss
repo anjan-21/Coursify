@@ -1,3 +1,4 @@
+// -------------------- Subject,Book & Board Section Styling --------------------
 .subject_title,
 .books_title,
 .board_title {
@@ -30,6 +31,7 @@
   align-items: center;
   justify-content: space-around;
   div {
+    background-color: $pure;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.49);
     text-align: center;
     padding: 1rem 0;
@@ -42,5 +44,34 @@
       padding-top: 1rem;
       color: $primary-blue;
     }
+  }
+}
+.subject_svg {
+  img {
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+    right: 0;
+    top: 710%;
+  }
+}
+.book_svg {
+  img {
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+    right: 0;
+    top: 800%;
+    transform: rotate(180deg);
+  }
+}
+.board_svg {
+  img {
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+    left: 0;
+    top: 950%;
+    transform: rotate(180deg);
   }
 }

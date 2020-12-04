@@ -1,3 +1,4 @@
+// -------------------- Navbar Section Styling --------------------
 .navbar {
   margin: 1rem 0;
 
@@ -7,14 +8,22 @@
     }
   }
 
+  .hamburger {
+    display: none;
+  }
+
   .nav_links {
     a {
       font-size: 1.5rem;
-      font-weight: bold;
+      font-weight: 700;
       color: $Primary-gray;
       text-decoration: none;
       padding: 1rem;
       margin: 0 1rem;
     }
   }
+}
+
+.open {
+  transform: translate(-10%, -10%) !important;
 }

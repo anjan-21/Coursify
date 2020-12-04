@@ -1,3 +1,4 @@
+// -------------------- JEE-NEET Section Styling --------------------
 .jee_neet_title {
   margin: 10rem 0 3rem 0;
   h1 {
@@ -58,5 +59,23 @@
 
   li.slick-active button {
     background-color: $primary-blue;
+  }
+}
+.jee_svg {
+  img {
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+    right: 0;
+    top: 500%;
+  }
+}
+.neet_svg {
+  img {
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+    left: 0;
+    top: 620%;
   }
 }

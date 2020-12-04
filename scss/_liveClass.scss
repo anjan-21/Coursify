@@ -1,3 +1,4 @@
+// -------------------- Live Classes Section Styling --------------------
 .live_classes_title {
   margin: 10rem 0 5rem 0;
   h1 {
@@ -66,8 +67,7 @@
       div {
         margin: 0 2rem;
         p {
-          padding: 1rem 0;
-          font-weight: normal;
+          padding: 0.5rem 0;
         }
       }
     }
@@ -79,5 +79,16 @@
   h2 {
     color: $primary_blue;
     text-transform: uppercase;
+  }
+}
+
+.classes_svg {
+  img {
+    position: absolute;
+    width: 60%;
+    z-index: -1;
+    left: 0%;
+    top: 360%;
+    transform: rotate(180deg);
   }
 }

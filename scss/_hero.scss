@@ -1,3 +1,4 @@
+// -------------------- Hero Section Styling --------------------
 .hero {
   margin: 6rem 0;
 
@@ -52,5 +53,14 @@
       border-radius: 100%;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.42);
     }
+  }
+}
+.hero_svg {
+  img {
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+    right: 20%;
+    top: 10%;
   }
 }

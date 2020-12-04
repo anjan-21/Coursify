@@ -1,3 +1,4 @@
+// -------------------- Work Section Styling --------------------
 .how_work {
   > h2 {
     color: $primary-blue;
@@ -17,6 +18,9 @@
 
     .question {
       margin-top: 3rem;
+      p {
+        color: $primary-blue;
+      }
     }
   }
 }

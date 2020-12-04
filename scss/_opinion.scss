@@ -1,3 +1,4 @@
+// -------------------- Student Opinion Section Styling --------------------
 .std_opinion_title {
   text-align: center;
   margin: 10rem 0 5rem 0;
@@ -63,6 +64,7 @@
       .student_detail {
         width: 500px;
         padding: 1rem 2rem;
+        background-color: $pure;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.49);
 
         h3 {
@@ -79,5 +81,7 @@
 }
 
 .download_app {
-  margin-top: 10rem;
+  .btn {
+    margin: 10rem auto 1rem auto !important;
+  }
 }

@@ -1,3 +1,4 @@
+// -------------------- Expert Tutor Section Styling --------------------
 .tutor_title {
   margin: 10rem 0 5rem 0;
   h1 {
@@ -19,10 +20,21 @@
     width: 450px;
     padding: 1rem 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.49);
+    background-color: $pure;
 
     h3 {
       color: $primary-blue;
       padding-bottom: 0.5rem;
     }
+  }
+}
+.tutor_svg {
+  img {
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+    left: 0;
+    top: 1110%;
+    transform: rotate(180deg);
   }
 }

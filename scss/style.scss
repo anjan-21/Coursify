@@ -1,17 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
 
+// -------------------- Variables --------------------
 $primary-pink: #da1233;
-// $primary-pink: #ff143b;
 $primary-blue: #033b86;
 $Primary-gray: rgb(78, 76, 76);
 $pure: white;
 $dark: black;
 
+// -------------------- Utility Classes --------------------
 .container {
   width: 100%;
   padding: 0 2rem;
 }
-
 .flex {
   display: flex;
 }
@@ -33,23 +33,6 @@ $dark: black;
 .text-center {
   text-align: center;
 }
-
-h1 {
-  font-size: 4rem;
-}
-h2 {
-  font-size: 2.5rem;
-}
-h3 {
-  font-size: 2rem;
-}
-h5 {
-  font-size: 1.1rem;
-}
-p {
-  font-size: 1.5rem;
-}
-
 .btn {
   display: flex;
   text-align: center;
@@ -62,13 +45,27 @@ p {
   color: $pure;
   outline: none;
 }
-.hamburger {
-  display: none;
+
+// -------------------- Commen Styling --------------------
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
 }
-.open {
-  transform: translate(-10%, -10%) !important;
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 1.1rem;
+}
+p {
+  font-size: 1.5rem;
 }
 
+// -------------------- Global Styling --------------------
 * {
   padding: 0;
   margin: 0;
@@ -76,7 +73,7 @@ p {
 }
 body {
   color: $Primary-gray !important;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 html {
   scroll-behavior: smooth;

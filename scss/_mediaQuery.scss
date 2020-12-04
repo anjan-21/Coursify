@@ -1,20 +1,17 @@
+// -------------------- Media Query --------------------
 @media only screen and (max-width: 767.98px) {
   body {
     h1 {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
     }
     h2 {
-      font-size: 1rem;
-    }
-    h3 {
-      font-size: 1rem;
-    }
-    p {
       font-size: 0.6rem;
     }
-    .active {
-      color: $primary-pink !important;
-      border-bottom: 2px solid $primary-pink;
+    h3 {
+      font-size: 0.5rem;
+    }
+    p {
+      font-size: 0.4rem;
     }
   }
   .btn {
@@ -49,7 +46,7 @@
 
       a {
         color: $pure;
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
     }
   }
@@ -252,25 +249,20 @@
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
   body {
     h1 {
-      font-size: 2.3rem;
+      font-size: 2rem;
     }
     h2 {
       font-size: 1.5rem;
     }
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
     p {
       font-size: 1rem;
     }
-    .active {
-      color: $primary-pink !important;
-      border-bottom: 2px solid $primary-pink;
-    }
   }
   .btn {
     font-size: 1.2rem;
-    margin-left: 2rem;
   }
   .navbar {
     .branding {
@@ -294,6 +286,9 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 2rem;
+      .btn {
+        margin-left: 2rem;
+      }
     }
     .hero_img {
       width: 80%;
@@ -404,7 +399,7 @@
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
   body {
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
     h2 {
       font-size: 1.8rem;
@@ -513,7 +508,7 @@
 @media screen and (min-width: 1200px) and (max-width: 1499.98px) {
   body {
     h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
     h2 {
       font-size: 2rem;

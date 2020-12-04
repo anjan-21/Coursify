@@ -1,3 +1,4 @@
+// -------------------- Slove Your Doubts Section Styling --------------------
 .solve_doubts {
   margin: 10rem 0;
   .doubts_details {
@@ -26,5 +27,14 @@
       width: 500px;
       margin-top: 5rem;
     }
+  }
+}
+.doubts_svg {
+  img {
+    position: absolute;
+    width: 50%;
+    z-index: -1;
+    right: 0;
+    top: 150%;
   }
 }

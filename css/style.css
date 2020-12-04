@@ -517,7 +517,7 @@ body {
 }
 
 .tutor_title {
-  margin: 10rem 0 3rem 0;
+  margin: 10rem 0 5rem 0;
 }
 
 .tutor_title h1 {
@@ -525,38 +525,8 @@ body {
   color: #033b86;
 }
 
-.expert_tutor {
-  display: -ms-grid;
-  display: grid;
-  grid-row-gap: 5rem;
-}
-
-.expert_tutor .tutor_1 {
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 1;
-  grid-row: 1;
-}
-
-.expert_tutor .tutor_2 {
-  -ms-grid-column: 3;
-  grid-column: 3;
-  -ms-grid-row: 1;
-  grid-row: 1;
-}
-
-.expert_tutor .tutor_3 {
-  -ms-grid-column: 2;
-  grid-column: 2;
-  -ms-grid-row: 2;
-  grid-row: 2;
-}
-
-.expert_tutor .tutor_4 {
-  -ms-grid-column: 4;
-  grid-column: 4;
-  -ms-grid-row: 2;
-  grid-row: 2;
+.expert_tutor > div {
+  margin: 3rem 0;
 }
 
 .expert_tutor > div img {

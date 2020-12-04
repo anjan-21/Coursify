@@ -43,6 +43,26 @@
   text-align: center;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
 .active {
   color: #da1233 !important;
   border-bottom: 3px solid #da1233;
@@ -58,6 +78,10 @@
 body {
   color: #4e4c4c !important;
   font-family: "Ubuntu", sans-serif;
+}
+
+.hamburger {
+  display: none;
 }
 
 .navbar {
@@ -81,10 +105,6 @@ body {
   margin: 6rem 0;
 }
 
-.hero .hero_detail h1 {
-  font-size: 5rem;
-}
-
 .hero .hero_detail h1 span {
   color: #033b86;
 }
@@ -106,7 +126,7 @@ body {
 }
 
 .hero .hero_img {
-  width: 650px;
+  width: 45%;
   height: 400px;
   padding: 1rem;
   position: relative;
@@ -147,11 +167,21 @@ body {
 
 .service {
   margin: 15rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 300px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 3.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .service > div {
   background-color: white;
-  width: 300px;
   border-radius: 0 40px 40px 0;
   -webkit-box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.2);
@@ -159,7 +189,7 @@ body {
 
 .service > div .details {
   text-align: center;
-  padding-right: 1.5rem;
+  margin: 0 auto;
   color: #4e4c4c;
 }
 
@@ -173,7 +203,6 @@ body {
 }
 
 .solve_doubts .doubts_details > h1 {
-  font-size: 4rem;
   margin-bottom: 4rem;
 }
 
@@ -193,13 +222,8 @@ body {
   padding: 0 2rem;
 }
 
-.solve_doubts .doubts_details .details h1 {
+.solve_doubts .doubts_details .details h2 {
   padding-bottom: 0.5rem;
-  font-size: 2.5rem;
-}
-
-.solve_doubts .doubts_details .details p {
-  font-size: 1.5rem;
 }
 
 .solve_doubts .doubts_poster img {
@@ -207,8 +231,7 @@ body {
   margin-top: 5rem;
 }
 
-.how_work > h1 {
-  font-size: 2.5rem;
+.how_work > h2 {
   color: #033b86;
   margin: 2rem 0;
 }
@@ -222,7 +245,6 @@ body {
 }
 
 .how_work .work_details p {
-  font-size: 1.5rem;
   margin-top: 1rem;
   padding: 0 1.5rem;
 }
@@ -246,8 +268,7 @@ body {
   padding-right: 0.5rem;
 }
 
-.live_classes_title h1 {
-  font-size: 3rem;
+.live_classes_title {
   margin: 10rem 0 5rem 0;
 }
 
@@ -257,8 +278,8 @@ body {
 
 .live_classes .demo_class {
   background-color: white;
-  width: 700px;
-  height: 400px;
+  width: 50%;
+  height: 450px;
   -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.49);
           box-shadow: 0 2px 7px rgba(0, 0, 0, 0.49);
   border-radius: 10px;
@@ -266,6 +287,7 @@ body {
 
 .live_classes .demo_class .question p {
   padding-top: 0.6rem;
+  font-size: 1rem;
 }
 
 .live_classes .demo_class .question img {
@@ -319,12 +341,7 @@ body {
   margin: 0 2rem;
 }
 
-.live_classes .class_details > div div h1 {
-  font-size: 2rem;
-}
-
 .live_classes .class_details > div div p {
-  font-size: 1.2rem;
   padding: 1rem 0;
   font-weight: normal;
 }
@@ -334,8 +351,7 @@ body {
   margin: 5rem 0;
 }
 
-.first_class_title h1 {
-  font-size: 2.5rem;
+.first_class_title h2 {
   color: #033b86;
   text-transform: uppercase;
 }
@@ -357,7 +373,6 @@ body {
 
 .jee_neet_title h1 {
   text-align: center;
-  font-size: 3rem;
 }
 
 .jee_neet_title h1 span {
@@ -382,17 +397,8 @@ body {
   outline: none;
 }
 
-.jee_neet_preparation .slider_container .jee_neet_details {
-  text-align: justify;
-}
-
-.jee_neet_preparation .slider_container .jee_neet_details h1 {
-  font-size: 2.5rem;
+.jee_neet_preparation .slider_container .jee_neet_details h2 {
   color: #033b86;
-}
-
-.jee_neet_preparation .slider_container .jee_neet_details p {
-  font-size: 1.5rem;
   margin: 1rem 0;
 }
 
@@ -453,14 +459,12 @@ body {
 .subject_title h1,
 .books_title h1,
 .board_title h1 {
-  font-size: 3rem;
   color: #033b86;
 }
 
 .subject_title p,
 .books_title p,
 .board_title p {
-  font-size: 1.3rem;
   padding: 1rem 0;
 }
 
@@ -508,12 +512,12 @@ body {
   height: 100px;
 }
 
-.subjects div h2,
-.books div h2,
-.board div h2 {
+.subjects div p,
+.books div p,
+.board div p {
+  font-weight: bold;
   padding-top: 1rem;
   color: #033b86;
-  font-size: 1.5rem;
 }
 
 .tutor_title {
@@ -521,7 +525,6 @@ body {
 }
 
 .tutor_title h1 {
-  font-size: 3rem;
   color: #033b86;
 }
 
@@ -537,12 +540,13 @@ body {
 }
 
 .expert_tutor .tutor_detail {
+  width: 450px;
   padding: 1rem 2rem;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.49);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.49);
 }
 
-.expert_tutor .tutor_detail h1 {
+.expert_tutor .tutor_detail h3 {
   color: #033b86;
   padding-bottom: 0.5rem;
 }
@@ -552,16 +556,12 @@ body {
   margin: 10rem 0 5rem 0;
 }
 
-.std_opinion_title h1 {
-  font-size: 3rem;
-}
-
 .student_opinion .slider_container {
   outline: none;
 }
 
 .student_opinion .slider_container .std_video {
-  width: 650px;
+  width: 45%;
   height: 400px;
   padding: 1rem;
   position: relative;
@@ -613,13 +613,13 @@ body {
 }
 
 .student_opinion .slider_container .slider_item .student_detail {
-  width: 300px;
+  width: 500px;
   padding: 1rem 2rem;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.49);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.49);
 }
 
-.student_opinion .slider_container .slider_item .student_detail h1 {
+.student_opinion .slider_container .slider_item .student_detail h3 {
   color: #033b86;
   padding-bottom: 0.5rem;
 }
@@ -642,5 +642,462 @@ body {
   border: none;
   color: white;
   outline: none;
+}
+
+@media only screen and (max-width: 767.98px) {
+  body h1 {
+    font-size: 1.5rem;
+  }
+  body h2 {
+    font-size: 0.8rem;
+  }
+  body h3 {
+    font-size: 1rem;
+  }
+  body p {
+    font-size: 0.5rem;
+  }
+  body .active {
+    color: #da1233 !important;
+    border-bottom: 2px solid #da1233;
+  }
+  .navbar .branding img {
+    width: 120px;
+  }
+  .navbar .hamburger {
+    display: block;
+    font-size: 2rem;
+    z-index: 2;
+  }
+  .navbar .nav_links {
+    display: none;
+    background-color: pink;
+    height: 100vh;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+  .navbar .nav_links a {
+    opacity: 0;
+  }
+  .hero {
+    margin: 4rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero .hero_detail {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  .hero .hero_img {
+    width: 100%;
+    height: 200px;
+  }
+  .service {
+    margin: 8rem 0;
+  }
+  .service > div img {
+    width: 100px;
+    height: 100px;
+  }
+  .solve_doubts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .solve_doubts .doubts_details > div img {
+    width: 40px !important;
+  }
+  .solve_doubts .doubts_poster img {
+    width: 250px !important;
+    margin-top: 2rem;
+  }
+  .work_details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .work_details img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .work_details > i {
+    display: none;
+  }
+  .work_details .question {
+    margin: 1.8rem 0 !important;
+  }
+  .live_classes_title {
+    margin: 8rem 0 2rem 0;
+  }
+  .live_classes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .live_classes .demo_class {
+    width: 100%;
+    height: 200px;
+  }
+  .live_classes .demo_class .question h4 {
+    font-size: 0.8rem;
+  }
+  .live_classes .demo_class .question p {
+    padding-top: 0.1rem;
+    font-size: 0.4rem;
+  }
+  .live_classes .demo_class .question img {
+    width: 50px;
+  }
+  .live_classes .demo_class .question .mcq_option div {
+    margin: 0.8rem 0;
+    font-size: 0.5rem;
+    width: 60px;
+    height: 10px;
+  }
+  .live_classes .demo_class .chat_people {
+    width: 100px;
+    height: 150px;
+  }
+  .live_classes .demo_class .chat_people div {
+    width: 60px;
+    height: 20px;
+  }
+  .live_classes .demo_class i {
+    padding: 0.8rem 0.8rem 0.8rem 1rem !important;
+    font-size: 1rem;
+  }
+  .live_classes .class_details > div img {
+    width: 50px;
+  }
+  .jee_neet_title {
+    margin: 8rem 0 2rem 0;
+  }
+  .jee_neet_preparation .slider_container .slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .jee_neet_preparation .jee_neet_video video {
+    padding: 1rem !important;
+    width: 260px !important;
+  }
+  .subject_title,
+  .books_title,
+  .board_title {
+    margin: 8rem 0 2rem 0;
+  }
+  .subjects div img,
+  .books div img,
+  .board div img {
+    width: 50px;
+    height: 50px;
+  }
+  .tutor_title {
+    margin: 8rem 0 2rem 0;
+  }
+  .expert_tutor > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem 0;
+  }
+  .expert_tutor > div > div {
+    margin: 2rem 0;
+  }
+  .expert_tutor > div > div img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  .expert_tutor .tutor_detail {
+    width: 150px;
+    padding: 1rem;
+  }
+  .std_opinion_title {
+    margin: 8rem 0 2rem 0;
+  }
+  .student_opinion .slider_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .student_opinion .slider_item img {
+    width: 30px !important;
+    margin-left: 1rem !important;
+  }
+  .student_opinion .slider_item .student img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .student_opinion .std_video {
+    margin: 1rem 0;
+    width: 90% !important;
+    height: 150px !important;
+    border: 10px solid transparent !important;
+  }
+  .student_opinion .std_video i {
+    font-size: 1rem;
+    padding: 0.8rem 0.8rem 0.8rem 1rem !important;
+  }
+  .student_opinion .student_detail {
+    width: 150px !important;
+    height: 75px !important;
+    padding: 0.4rem 1rem !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  body h1 {
+    font-size: 2.3rem;
+  }
+  body h2 {
+    font-size: 1.5rem;
+  }
+  body h3 {
+    font-size: 1.5rem;
+  }
+  body p {
+    font-size: 1rem;
+  }
+  body .active {
+    color: #da1233 !important;
+    border-bottom: 2px solid #da1233;
+  }
+  .navbar .branding img {
+    width: 120px;
+  }
+  .navbar .nav_links a {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.5rem 0.8rem;
+  }
+  .hero {
+    margin: 4rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero .hero_detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  .hero .hero_img {
+    width: 80%;
+    height: 300px;
+  }
+  .service {
+    margin: 10rem 0;
+  }
+  .service > div img {
+    width: 130px;
+    height: 130px;
+  }
+  .solve_doubts .doubts_details > div img {
+    width: 40px !important;
+  }
+  .solve_doubts .doubts_poster img {
+    width: 280px !important;
+  }
+  .work_details img {
+    width: 140px !important;
+    height: 140px !important;
+  }
+  .work_details > i {
+    font-size: 2rem;
+  }
+  .work_details .question {
+    margin-top: 1.8rem !important;
+  }
+  .live_classes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .live_classes .demo_class {
+    width: 80%;
+    height: 380px;
+  }
+  .jee_neet_title {
+    margin: 8rem 0 2rem 0;
+  }
+  .jee_neet_preparation .slider_container .slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .jee_neet_preparation .jee_neet_video video {
+    width: 450px !important;
+  }
+  .subjects div img,
+  .books div img,
+  .board div img {
+    width: 80px;
+    height: 80px;
+  }
+  .tutor_title {
+    margin: 8rem 0 2rem 0;
+  }
+  .expert_tutor > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem 0;
+  }
+  .expert_tutor > div > div {
+    margin: 2rem 0;
+  }
+  .expert_tutor .tutor_detail {
+    width: 300px;
+  }
+  .std_opinion_title {
+    margin: 8rem 0 2rem 0;
+  }
+  .student_opinion .slider_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .student_opinion .std_video {
+    margin: 1rem 0;
+    width: 70% !important;
+    height: 300px !important;
+  }
+  .student_opinion .student_detail {
+    width: 280px !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  body h1 {
+    font-size: 3rem;
+  }
+  body h2 {
+    font-size: 1.8rem;
+  }
+  body h3 {
+    font-size: 1.5rem;
+  }
+  body p {
+    font-size: 1.1rem;
+  }
+  .navbar .branding img {
+    width: 150px;
+  }
+  .navbar .nav_links a {
+    font-size: 1.2rem;
+    margin: 0 0.4rem;
+  }
+  .hero .hero_img {
+    height: 300px;
+  }
+  .service {
+    margin: 10rem 0;
+  }
+  .service > div img {
+    width: 130px;
+    height: 130px;
+  }
+  .solve_doubts .doubts_poster img {
+    width: 350px !important;
+  }
+  .work_details img {
+    width: 180px !important;
+    height: 180px !important;
+  }
+  .live_classes .demo_class {
+    height: 350px;
+  }
+  .live_classes .demo_class .question .mcq_option div {
+    width: 180px;
+  }
+  .live_classes .demo_class .chat_people {
+    width: 150px;
+  }
+  .live_classes .demo_class .chat_people div {
+    width: 100px;
+    height: 40px;
+  }
+  .live_classes .demo_class i {
+    font-size: 1.5rem;
+    padding: 1rem 1rem 1rem 1.5rem;
+  }
+  .live_classes .class_details img {
+    width: 70px !important;
+  }
+  .jee_neet_preparation .jee_neet_video video {
+    width: 450px !important;
+  }
+  .expert_tutor .tutor_detail {
+    width: 300px;
+  }
+  .student_opinion .std_video {
+    height: 300px !important;
+  }
+  .student_opinion .student_detail {
+    width: 210px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1499.98px) {
+  body h1 {
+    font-size: 3.5rem;
+  }
+  body h2 {
+    font-size: 2rem;
+  }
+  body p {
+    font-size: 1.3rem;
+  }
+  .navbar .branding img {
+    width: 180px;
+  }
+  .navbar .nav_links a {
+    font-size: 1.2rem;
+    margin: 0 0.6rem;
+  }
+  .hero .hero_img {
+    height: 350px;
+  }
+  .service {
+    margin: 10rem 0;
+  }
+  .jee_neet_preparation .jee_neet_video video {
+    width: 500px;
+  }
+  .expert_tutor .tutor_detail {
+    width: 400px;
+  }
+  .student_opinion .std_video {
+    height: 350px !important;
+  }
+  .student_opinion .student_detail {
+    width: 300px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

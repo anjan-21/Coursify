@@ -1,6 +1,5 @@
 .how_work {
-  > h1 {
-    font-size: 2.5rem;
+  > h2 {
     color: $primary-blue;
     margin: 2rem 0;
   }
@@ -12,7 +11,6 @@
       box-shadow: 0 0px 5px rgb(82, 80, 80);
     }
     p {
-      font-size: 1.5rem;
       margin-top: 1rem;
       padding: 0 1.5rem;
     }

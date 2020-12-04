@@ -2,7 +2,6 @@
   margin: 10rem 0 3rem 0;
   h1 {
     text-align: center;
-    font-size: 3rem;
 
     span {
       color: $primary-blue;
@@ -26,13 +25,8 @@
       }
     }
     .jee_neet_details {
-      text-align: justify;
-      h1 {
-        font-size: 2.5rem;
+      h2 {
         color: $primary-blue;
-      }
-      p {
-        font-size: 1.5rem;
         margin: 1rem 0;
       }
     }

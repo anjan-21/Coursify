@@ -1,0 +1,543 @@
+@media only screen and (max-width: 767.98px) {
+  body {
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 0.8rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.5rem;
+    }
+    .active {
+      color: $primary-pink !important;
+      border-bottom: 2px solid $primary-pink;
+    }
+  }
+  .navbar {
+    .branding {
+      img {
+        width: 120px;
+      }
+    }
+    .hamburger {
+      display: block;
+      font-size: 2rem;
+      z-index: 2;
+    }
+    .nav_links {
+      display: none;
+      background-color: pink;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      transition: all 1s ease-out;
+      a {
+        opacity: 0;
+      }
+    }
+  }
+  .hero {
+    margin: 4rem 0;
+    flex-direction: column;
+    .hero_detail {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .hero_img {
+      width: 100%;
+      height: 200px;
+    }
+  }
+  .service {
+    margin: 8rem 0;
+    > div {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+  .solve_doubts {
+    flex-direction: column;
+    text-align: center;
+    .doubts_details {
+      > div {
+        img {
+          width: 40px !important;
+        }
+      }
+    }
+    .doubts_poster {
+      img {
+        width: 250px !important;
+        margin-top: 2rem;
+      }
+    }
+  }
+  .work_details {
+    flex-direction: column;
+    img {
+      width: 100px !important;
+      height: 100px !important;
+    }
+    > i {
+      display: none;
+    }
+    .question {
+      margin: 1.8rem 0 !important;
+    }
+  }
+  .live_classes_title {
+    margin: 8rem 0 2rem 0;
+  }
+  .live_classes {
+    flex-direction: column;
+    .demo_class {
+      width: 100%;
+      height: 200px;
+
+      .question {
+        h4 {
+          font-size: 0.8rem;
+        }
+        p {
+          padding-top: 0.1rem;
+          font-size: 0.4rem;
+        }
+        img {
+          width: 50px;
+        }
+        .mcq_option {
+          div {
+            margin: 0.8rem 0;
+            font-size: 0.5rem;
+            width: 60px;
+            height: 10px;
+          }
+        }
+      }
+      .chat_people {
+        width: 100px;
+        height: 150px;
+        div {
+          width: 60px;
+          height: 20px;
+        }
+      }
+      i {
+        padding: 0.8rem 0.8rem 0.8rem 1rem !important;
+        font-size: 1rem;
+      }
+    }
+
+    .class_details {
+      > div {
+        img {
+          width: 50px;
+        }
+      }
+    }
+  }
+  .jee_neet_title {
+    margin: 8rem 0 2rem 0;
+  }
+  .jee_neet_preparation {
+    .slider_container {
+      .slide {
+        flex-direction: column;
+      }
+    }
+    .jee_neet_video {
+      video {
+        padding: 1rem !important;
+        width: 260px !important;
+      }
+    }
+  }
+  .subject_title,
+  .books_title,
+  .board_title {
+    margin: 8rem 0 2rem 0;
+  }
+  .subjects,
+  .books,
+  .board {
+    div {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+  .tutor_title {
+    margin: 8rem 0 2rem 0;
+  }
+  .expert_tutor {
+    > div {
+      flex-direction: column;
+      margin: 1rem 0;
+      > div {
+        margin: 2rem 0;
+        img {
+          width: 100px !important;
+          height: 100px !important;
+        }
+      }
+    }
+    .tutor_detail {
+      width: 150px;
+      padding: 1rem;
+    }
+  }
+  .std_opinion_title {
+    margin: 8rem 0 2rem 0;
+  }
+  .student_opinion {
+    .slider_item {
+      flex-direction: column;
+      img {
+        width: 30px !important;
+        margin-left: 1rem !important;
+      }
+      .student {
+        img {
+          width: 80px !important;
+          height: 80px !important;
+        }
+      }
+    }
+    .std_video {
+      margin: 1rem 0;
+      width: 90% !important;
+      height: 150px !important;
+      border: 10px solid transparent !important;
+
+      i {
+        font-size: 1rem;
+        padding: 0.8rem 0.8rem 0.8rem 1rem !important;
+      }
+    }
+    .student_detail {
+      width: 150px !important;
+      height: 75px !important;
+      padding: 0.4rem 1rem !important;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    h1 {
+      font-size: 2.3rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .active {
+      color: $primary-pink !important;
+      border-bottom: 2px solid $primary-pink;
+    }
+  }
+  .navbar {
+    .branding {
+      img {
+        width: 120px;
+      }
+    }
+    .nav_links {
+      a {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0.5rem 0.8rem;
+      }
+    }
+  }
+  .hero {
+    margin: 4rem 0;
+    flex-direction: column;
+    .hero_detail {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+    .hero_img {
+      width: 80%;
+      height: 300px;
+    }
+  }
+
+  .service {
+    margin: 10rem 0;
+    > div {
+      img {
+        width: 130px;
+        height: 130px;
+      }
+    }
+  }
+  .solve_doubts {
+    .doubts_details {
+      > div {
+        img {
+          width: 40px !important;
+        }
+      }
+    }
+    .doubts_poster {
+      img {
+        width: 280px !important;
+      }
+    }
+  }
+  .work_details {
+    img {
+      width: 140px !important;
+      height: 140px !important;
+    }
+    > i {
+      font-size: 2rem;
+    }
+    .question {
+      margin-top: 1.8rem !important;
+    }
+  }
+  .live_classes {
+    flex-direction: column;
+    .demo_class {
+      width: 80%;
+      height: 380px;
+    }
+  }
+  .jee_neet_title {
+    margin: 8rem 0 2rem 0;
+  }
+  .jee_neet_preparation {
+    .slider_container {
+      .slide {
+        flex-direction: column;
+      }
+    }
+    .jee_neet_video {
+      video {
+        width: 450px !important;
+      }
+    }
+  }
+  .subjects,
+  .books,
+  .board {
+    div {
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+  .tutor_title {
+    margin: 8rem 0 2rem 0;
+  }
+  .expert_tutor {
+    > div {
+      flex-direction: column;
+      margin: 1rem 0;
+      > div {
+        margin: 2rem 0;
+      }
+    }
+    .tutor_detail {
+      width: 300px;
+    }
+  }
+  .std_opinion_title {
+    margin: 8rem 0 2rem 0;
+  }
+  .student_opinion {
+    .slider_item {
+      flex-direction: column;
+    }
+    .std_video {
+      margin: 1rem 0;
+      width: 70% !important;
+      height: 300px !important;
+    }
+    .student_detail {
+      width: 280px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+  }
+  .navbar {
+    .branding {
+      img {
+        width: 150px;
+      }
+    }
+    .nav_links {
+      a {
+        font-size: 1.2rem;
+        margin: 0 0.4rem;
+      }
+    }
+  }
+  .hero {
+    .hero_img {
+      height: 300px;
+    }
+  }
+  .service {
+    margin: 10rem 0;
+    > div {
+      img {
+        width: 130px;
+        height: 130px;
+      }
+    }
+  }
+  .solve_doubts {
+    .doubts_poster {
+      img {
+        width: 350px !important;
+      }
+    }
+  }
+  .work_details {
+    img {
+      width: 180px !important;
+      height: 180px !important;
+    }
+  }
+  .live_classes {
+    .demo_class {
+      height: 350px;
+
+      .question {
+        .mcq_option {
+          div {
+            width: 180px;
+          }
+        }
+      }
+      .chat_people {
+        width: 150px;
+        div {
+          width: 100px;
+          height: 40px;
+        }
+      }
+      i {
+        font-size: 1.5rem;
+        padding: 1rem 1rem 1rem 1.5rem;
+      }
+    }
+    .class_details {
+      img {
+        width: 70px !important;
+      }
+    }
+  }
+  .jee_neet_preparation {
+    .jee_neet_video {
+      video {
+        width: 450px !important;
+      }
+    }
+  }
+  .expert_tutor {
+    .tutor_detail {
+      width: 300px;
+    }
+  }
+  .student_opinion {
+    .std_video {
+      height: 300px !important;
+    }
+    .student_detail {
+      width: 210px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1499.98px) {
+  body {
+    h1 {
+      font-size: 3.5rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  .navbar {
+    .branding {
+      img {
+        width: 180px;
+      }
+    }
+
+    .nav_links {
+      a {
+        font-size: 1.2rem;
+        margin: 0 0.6rem;
+      }
+    }
+  }
+  .hero {
+    .hero_img {
+      height: 350px;
+    }
+  }
+  .service {
+    margin: 10rem 0;
+  }
+  .jee_neet_preparation {
+    .jee_neet_video {
+      video {
+        width: 500px;
+      }
+    }
+  }
+  .expert_tutor {
+    .tutor_detail {
+      width: 400px;
+    }
+  }
+  .student_opinion {
+    .std_video {
+      height: 350px !important;
+    }
+    .student_detail {
+      width: 300px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) {
+}

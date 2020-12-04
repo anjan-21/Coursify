@@ -3,7 +3,6 @@
 
   .hero_detail {
     h1 {
-      font-size: 5rem;
       span {
         color: $primary-blue;
       }
@@ -25,7 +24,7 @@
   }
 
   .hero_img {
-    width: 650px;
+    width: 45%;
     height: 400px;
     padding: 1rem;
     position: relative;

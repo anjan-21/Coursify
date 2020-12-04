@@ -11,6 +11,7 @@ $dark: black;
   width: 100%;
   padding: 0 2rem;
 }
+
 .flex {
   display: flex;
 }
@@ -32,6 +33,23 @@ $dark: black;
 .text-center {
   text-align: center;
 }
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 1.1rem;
+}
+p {
+  font-size: 1.5rem;
+}
+
 .active {
   color: $primary-pink !important;
   border-bottom: 3px solid $primary-pink;
@@ -46,6 +64,9 @@ body {
   color: $Primary-gray !important;
   font-family: "Ubuntu", sans-serif;
 }
+.hamburger {
+  display: none;
+}
 
 @import "./navbar";
 @import "./hero";
@@ -57,3 +78,4 @@ body {
 @import "./subjectsBooksBoard";
 @import "./expert";
 @import "./opinion";
+@import "./mediaQuery";

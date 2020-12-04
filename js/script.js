@@ -1,3 +1,7 @@
+$(".hamburger").click(function () {
+  $(".nav_links").addClass("open");
+});
+
 $(".jee_neet_preparation").slick({
   dots: true,
   infinite: true,

@@ -1,16 +1,13 @@
 .std_opinion_title {
   text-align: center;
   margin: 10rem 0 5rem 0;
-  h1 {
-    font-size: 3rem;
-  }
 }
 
 .student_opinion {
   .slider_container {
     outline: none;
     .std_video {
-      width: 650px;
+      width: 45%;
       height: 400px;
       padding: 1rem;
       position: relative;
@@ -64,11 +61,11 @@
       }
 
       .student_detail {
-        width: 300px;
+        width: 500px;
         padding: 1rem 2rem;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.49);
 
-        h1 {
+        h3 {
           color: $primary-blue;
           padding-bottom: 0.5rem;
         }

@@ -4,11 +4,9 @@
   margin: 10rem 0 5rem 0;
   text-align: center;
   h1 {
-    font-size: 3rem;
     color: $primary-blue;
   }
   p {
-    font-size: 1.3rem;
     padding: 1rem 0;
   }
 }
@@ -39,10 +37,10 @@
       width: 100px;
       height: 100px;
     }
-    h2 {
+    p {
+      font-weight: bold;
       padding-top: 1rem;
       color: $primary-blue;
-      font-size: 1.5rem;
     }
   }
 }

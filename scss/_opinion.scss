@@ -1,0 +1,97 @@
+.std_opinion_title {
+  text-align: center;
+  margin: 10rem 0 5rem 0;
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.student_opinion {
+  .slider_container {
+    outline: none;
+    .std_video {
+      width: 650px;
+      height: 400px;
+      padding: 1rem;
+      position: relative;
+      border: 20px solid transparent;
+      background-color: $pure;
+      box-sizing: border-box;
+      background-clip: padding-box;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(
+          270deg,
+          rgba(218, 18, 51, 0.8) 0%,
+          rgba(3, 59, 134, 0.8) 100%
+        );
+        z-index: -1;
+        margin: -20px;
+        border-radius: 40px;
+      }
+
+      i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $primary-blue;
+        padding: 1rem 1rem 1rem 1.3rem;
+        background-color: $pure;
+        border-radius: 100%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.42);
+      }
+    }
+
+    .slider_item {
+      > img {
+        width: 60px;
+        margin-left: -2rem;
+      }
+      .student {
+        img {
+          width: 150px;
+          height: 150px;
+          border-radius: 100%;
+          margin: 0 1rem;
+        }
+      }
+
+      .student_detail {
+        width: 300px;
+        padding: 1rem 2rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.49);
+
+        h1 {
+          color: $primary-blue;
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .slick-dots {
+    margin: 2.5rem 0;
+  }
+}
+
+.download_app {
+  text-align: center;
+  margin-top: 10rem;
+  button {
+    margin: 2rem 0;
+    padding: 0.6rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: $primary-pink;
+    border: none;
+    color: $pure;
+    outline: none;
+  }
+}

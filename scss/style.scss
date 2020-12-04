@@ -50,9 +50,23 @@ p {
   font-size: 1.5rem;
 }
 
-.active {
-  color: $primary-pink !important;
-  border-bottom: 3px solid $primary-pink;
+.btn {
+  display: flex;
+  text-align: center;
+  margin: 3rem auto;
+  padding: 0.6rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: $primary-pink;
+  border: none;
+  color: $pure;
+  outline: none;
+}
+.hamburger {
+  display: none;
+}
+.open {
+  transform: translate(-10%, -10%) !important;
 }
 
 * {
@@ -64,8 +78,21 @@ body {
   color: $Primary-gray !important;
   font-family: "Ubuntu", sans-serif;
 }
-.hamburger {
-  display: none;
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f6f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $primary-blue;
+  border-radius: 5px;
+  height: 200px;
 }
 
 @import "./navbar";

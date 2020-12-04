@@ -1,5 +1,6 @@
 $(".hamburger").click(function () {
-  $(".nav_links").addClass("open");
+  $(".nav_links").toggleClass("open");
+  $(".hamburger i").toggleClass("fa-times");
 });
 
 $(".jee_neet_preparation").slick({

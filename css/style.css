@@ -63,9 +63,28 @@ p {
   font-size: 1.5rem;
 }
 
-.active {
-  color: #da1233 !important;
-  border-bottom: 3px solid #da1233;
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin: 3rem auto;
+  padding: 0.6rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: #da1233;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.open {
+  -webkit-transform: translate(-10%, -10%) !important;
+          transform: translate(-10%, -10%) !important;
 }
 
 * {
@@ -80,8 +99,22 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-.hamburger {
-  display: none;
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f6f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #033b86;
+  border-radius: 5px;
+  height: 200px;
 }
 
 .navbar {
@@ -109,19 +142,7 @@ body {
   color: #033b86;
 }
 
-.hero .hero_detail button {
-  text-align: center;
-  margin: 3rem auto;
-  padding: 0.6rem 1rem;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  background-color: #da1233;
-  border: none;
-  color: white;
-  outline: none;
-}
-
-.hero .hero_detail button i {
+.hero .hero_detail .btn i {
   padding-right: 0.5rem;
 }
 
@@ -253,21 +274,6 @@ body {
   margin-top: 3rem;
 }
 
-.how_work button {
-  margin: 3rem auto;
-  padding: 0.6rem 1rem;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  background-color: #da1233;
-  border: none;
-  color: white;
-  outline: none;
-}
-
-.how_work button i {
-  padding-right: 0.5rem;
-}
-
 .live_classes_title {
   margin: 10rem 0 5rem 0;
 }
@@ -356,17 +362,6 @@ body {
   text-transform: uppercase;
 }
 
-.first_class_title button {
-  margin: 2rem 0;
-  padding: 0.6rem 1rem;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  background-color: #da1233;
-  border: none;
-  color: white;
-  outline: none;
-}
-
 .jee_neet_title {
   margin: 10rem 0 3rem 0;
 }
@@ -432,21 +427,6 @@ body {
 
 .slick-dots li.slick-active button {
   background-color: #033b86;
-}
-
-.prepar_now {
-  text-align: center;
-}
-
-.prepar_now button {
-  margin: 2rem 0;
-  padding: 0.6rem 1rem;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  background-color: #da1233;
-  border: none;
-  color: white;
-  outline: none;
 }
 
 .subject_title,
@@ -629,60 +609,67 @@ body {
 }
 
 .download_app {
-  text-align: center;
   margin-top: 10rem;
-}
-
-.download_app button {
-  margin: 2rem 0;
-  padding: 0.6rem 1rem;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  background-color: #da1233;
-  border: none;
-  color: white;
-  outline: none;
 }
 
 @media only screen and (max-width: 767.98px) {
   body h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   body h2 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   body h3 {
     font-size: 1rem;
   }
   body p {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
   body .active {
     color: #da1233 !important;
     border-bottom: 2px solid #da1233;
   }
+  .btn {
+    font-size: 1rem;
+  }
   .navbar .branding img {
-    width: 120px;
+    width: 150px;
   }
   .navbar .hamburger {
     display: block;
     font-size: 2rem;
+    color: #da1233;
     z-index: 2;
   }
   .navbar .nav_links {
-    display: none;
-    background-color: pink;
-    height: 100vh;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    -webkit-transform: translate(100%, -10%);
+            transform: translate(100%, -10%);
+    background-color: #033b86;
+    height: 70vh;
     width: 100%;
+    z-index: 1;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .navbar .nav_links a {
-    opacity: 0;
+    color: white;
+    font-size: 1.5rem;
   }
   .hero {
     margin: 4rem 0;
@@ -714,7 +701,7 @@ body {
     text-align: center;
   }
   .solve_doubts .doubts_details > div img {
-    width: 40px !important;
+    width: 50px !important;
   }
   .solve_doubts .doubts_poster img {
     width: 250px !important;
@@ -750,23 +737,24 @@ body {
     height: 200px;
   }
   .live_classes .demo_class .question h4 {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   .live_classes .demo_class .question p {
     padding-top: 0.1rem;
-    font-size: 0.4rem;
+    font-size: 0.5rem;
   }
   .live_classes .demo_class .question img {
     width: 50px;
   }
   .live_classes .demo_class .question .mcq_option div {
     margin: 0.8rem 0;
-    font-size: 0.5rem;
+    font-size: 0.4rem;
+    padding: 0.1rem;
     width: 60px;
     height: 10px;
   }
   .live_classes .demo_class .chat_people {
-    width: 100px;
+    width: 90px;
     height: 150px;
   }
   .live_classes .demo_class .chat_people div {
@@ -778,7 +766,7 @@ body {
     font-size: 1rem;
   }
   .live_classes .class_details > div img {
-    width: 50px;
+    width: 60px;
   }
   .jee_neet_title {
     margin: 8rem 0 2rem 0;
@@ -857,6 +845,10 @@ body {
     height: 75px !important;
     padding: 0.4rem 1rem !important;
   }
+  .slick-dots button {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -875,6 +867,10 @@ body {
   body .active {
     color: #da1233 !important;
     border-bottom: 2px solid #da1233;
+  }
+  .btn {
+    font-size: 1.2rem;
+    margin-left: 2rem;
   }
   .navbar .branding img {
     width: 120px;
@@ -1005,6 +1001,9 @@ body {
   }
   body p {
     font-size: 1.1rem;
+  }
+  .btn {
+    font-size: 1.2rem;
   }
   .navbar .branding img {
     width: 150px;

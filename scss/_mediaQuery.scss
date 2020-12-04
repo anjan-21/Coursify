@@ -1,42 +1,55 @@
 @media only screen and (max-width: 767.98px) {
   body {
     h1 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
     }
     h2 {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
     h3 {
       font-size: 1rem;
     }
     p {
-      font-size: 0.5rem;
+      font-size: 0.6rem;
     }
     .active {
       color: $primary-pink !important;
       border-bottom: 2px solid $primary-pink;
     }
   }
+  .btn {
+    font-size: 1rem;
+  }
   .navbar {
     .branding {
       img {
-        width: 120px;
+        width: 150px;
       }
     }
     .hamburger {
       display: block;
       font-size: 2rem;
+      color: $primary-pink;
       z-index: 2;
     }
     .nav_links {
-      display: none;
-      background-color: pink;
-      height: 100vh;
+      position: absolute;
+      top: 5%;
+      left: 10%;
+      transform: translate(100%, -10%);
+      background-color: $primary-blue;
+      height: 70vh;
       width: 100%;
-      flex-direction: column;
+      z-index: 1;
       transition: all 1s ease-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
       a {
-        opacity: 0;
+        color: $pure;
+        font-size: 1.5rem;
       }
     }
   }
@@ -67,7 +80,7 @@
     .doubts_details {
       > div {
         img {
-          width: 40px !important;
+          width: 50px !important;
         }
       }
     }
@@ -102,11 +115,11 @@
 
       .question {
         h4 {
-          font-size: 0.8rem;
+          font-size: 0.6rem;
         }
         p {
           padding-top: 0.1rem;
-          font-size: 0.4rem;
+          font-size: 0.5rem;
         }
         img {
           width: 50px;
@@ -114,14 +127,15 @@
         .mcq_option {
           div {
             margin: 0.8rem 0;
-            font-size: 0.5rem;
+            font-size: 0.4rem;
+            padding: 0.1rem;
             width: 60px;
             height: 10px;
           }
         }
       }
       .chat_people {
-        width: 100px;
+        width: 90px;
         height: 150px;
         div {
           width: 60px;
@@ -137,7 +151,7 @@
     .class_details {
       > div {
         img {
-          width: 50px;
+          width: 60px;
         }
       }
     }
@@ -227,6 +241,12 @@
       padding: 0.4rem 1rem !important;
     }
   }
+  .slick-dots {
+    button {
+      width: 0.6rem;
+      height: 0.6rem;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
@@ -247,6 +267,10 @@
       color: $primary-pink !important;
       border-bottom: 2px solid $primary-pink;
     }
+  }
+  .btn {
+    font-size: 1.2rem;
+    margin-left: 2rem;
   }
   .navbar {
     .branding {
@@ -391,6 +415,9 @@
     p {
       font-size: 1.1rem;
     }
+  }
+  .btn {
+    font-size: 1.2rem;
   }
   .navbar {
     .branding {
@@ -537,7 +564,4 @@
       width: 300px !important;
     }
   }
-}
-
-@media screen and (min-width: 1500px) {
 }

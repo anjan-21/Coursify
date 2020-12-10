@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coursify</title>
 
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./Images/favicon-96x96.ico"
+    />
+
     <!-- External CSS -->
     <link rel="stylesheet" href="./css/style.css" />
 
@@ -61,7 +69,10 @@
         </button>
       </div>
       <div class="hero_img">
-        <i class="fas fa-2x fa-play"></i>
+        <i
+          class="fas fa-2x fa-play js-modal-btn"
+          data-video-id="7TUOI23spt0"
+        ></i>
       </div>
     </section>
     <!-- ---------------------------------------- Hero Section End ---------------------------------------- -->
@@ -133,7 +144,7 @@
 
     <!-- ---------------------------------------- Work Section Start ---------------------------------------- -->
     <section class="how_work container">
-      <h2 class="text-center">How it works?</h2>
+      <h1 class="text-center">How it works?</h1>
       <div class="work_details flex aling-center justify-around">
         <div class="doubt text-center">
           <img src="./Images/vector-2.png" alt="" />
@@ -651,6 +662,10 @@
       <button class="btn">Download the app for free</button>
     </div>
     <!-- ---------------------------------------- Student Opinion Section End ---------------------------------------- -->
+
+    <div class="scrolltop float-right">
+      <i class="fa fa-arrow-up" id="myBTN" aria-hidden="true"></i>
+    </div>
 
     <!-- jQuery -->
     <script

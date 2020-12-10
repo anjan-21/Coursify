@@ -91,6 +91,21 @@ html {
   border-radius: 5px;
   height: 200px;
 }
+#myBTN {
+  display: none;
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  z-index: 99;
+  border: none;
+  color: $pure;
+  background: $primary-blue;
+  padding: 10px;
+  border-radius: 100px;
+}
+#myBTN:hover {
+  background: $Primary-gray;
+}
 
 @import "./navbar";
 @import "./hero";

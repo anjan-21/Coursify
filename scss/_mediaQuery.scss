@@ -1,21 +1,26 @@
 // -------------------- Media Query --------------------
 @media only screen and (max-width: 767.98px) {
   body {
+    overflow-x: hidden;
     h1 {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
     h2 {
-      font-size: 0.6rem;
+      font-size: 1.5rem;
     }
     h3 {
-      font-size: 0.5rem;
+      font-size: 1.2rem;
     }
     p {
-      font-size: 0.4rem;
+      font-size: 1rem;
+    }
+    .container {
+      width: 100%;
+      padding: 0 1rem;
     }
   }
   .btn {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .navbar {
     .branding {
@@ -33,20 +38,24 @@
       position: absolute;
       top: 5%;
       left: 10%;
-      transform: translate(100%, -10%);
+      transform: translate(-10%, -10%);
       background-color: $primary-blue;
-      height: 70vh;
+      height: 60vh;
       width: 100%;
       z-index: 1;
-      transition: all 1s ease-out;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+      visibility: hidden;
 
       a {
         color: $pure;
         font-size: 1rem;
+        &:hover {
+          color: $primary-pink;
+          transition: all 1s ease-out;
+        }
       }
     }
   }
@@ -58,7 +67,7 @@
       margin: 2rem 0;
     }
     .hero_img {
-      width: 100%;
+      width: 80%;
       height: 200px;
     }
   }
@@ -73,26 +82,36 @@
   }
   .solve_doubts {
     flex-direction: column;
-    text-align: center;
+    margin: 0 auto;
     .doubts_details {
       > div {
         img {
-          width: 50px !important;
+          width: 65px !important;
         }
       }
     }
     .doubts_poster {
       img {
         width: 250px !important;
-        margin-top: 2rem;
+        margin: 2rem auto;
       }
     }
   }
   .work_details {
     flex-direction: column;
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .doubt {
+      img {
+        margin-right: 1.5rem;
+      }
+    }
     img {
-      width: 100px !important;
-      height: 100px !important;
+      width: 150px !important;
+      height: 150px !important;
     }
     > i {
       display: none;
@@ -107,8 +126,9 @@
   .live_classes {
     flex-direction: column;
     .demo_class {
-      width: 100%;
+      width: 70%;
       height: 200px;
+      padding: 1rem;
 
       .question {
         h4 {
@@ -147,6 +167,7 @@
 
     .class_details {
       > div {
+        margin: 2rem;
         img {
           width: 60px;
         }
@@ -167,6 +188,9 @@
         padding: 1rem !important;
         width: 260px !important;
       }
+    }
+    .jee_neet_details {
+      text-align: center;
     }
   }
   .subject_title,
@@ -192,6 +216,7 @@
       flex-direction: column;
       margin: 1rem 0;
       > div {
+        justify-content: center;
         margin: 2rem 0;
         img {
           width: 100px !important;
@@ -200,7 +225,7 @@
       }
     }
     .tutor_detail {
-      width: 150px;
+      width: 50%;
       padding: 1rem;
     }
   }
@@ -233,8 +258,7 @@
       }
     }
     .student_detail {
-      width: 150px !important;
-      height: 75px !important;
+      width: 100% !important;
       padding: 0.4rem 1rem !important;
     }
   }
@@ -242,6 +266,11 @@
     button {
       width: 0.6rem;
       height: 0.6rem;
+    }
+  }
+  .download_app {
+    .btn {
+      margin-top: 5rem !important;
     }
   }
 }
@@ -478,6 +507,9 @@
       }
     }
     .class_details {
+      > div {
+        margin: 2rem;
+      }
       img {
         width: 70px !important;
       }

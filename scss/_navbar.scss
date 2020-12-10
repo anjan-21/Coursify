@@ -20,10 +20,14 @@
       text-decoration: none;
       padding: 1rem;
       margin: 0 1rem;
+      &:hover {
+        color: $primary-pink;
+        transition: all 0.2s ease-out;
+      }
     }
   }
 }
 
 .open {
-  transform: translate(-10%, -10%) !important;
+  visibility: visible !important;
 }

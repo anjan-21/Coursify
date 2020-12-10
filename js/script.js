@@ -28,3 +28,17 @@ $(".student_opinion").slick({
   prevArrow: "none",
   nextArrow: "none",
 });
+
+$(window).scroll(function () {
+  let scrollTop = $(window).scrollTop();
+
+  if (scrollTop > 20) {
+    $("#myBTN").css("display", "block");
+  } else {
+    $("#myBTN").css("display", "none");
+  }
+});
+
+$("#myBTN").click(function () {
+  $(window).scrollTop(0);
+});
